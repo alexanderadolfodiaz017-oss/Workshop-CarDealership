@@ -1,11 +1,11 @@
--- Step 1: Recreate database
+
 DROP DATABASE IF EXISTS cardealership;
 
 CREATE DATABASE cardealership;
 
 USE cardealership;
 
--- Step 2: Create dealership table
+
 CREATE TABLE dealership (
     dealership_id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
@@ -13,7 +13,7 @@ CREATE TABLE dealership (
     phone VARCHAR(12) NOT NULL
 );
 
--- Step 3: Insert data
+
 INSERT INTO dealership (name, address, phone) VALUES
 ('CarMax Auto Center', '123 Maple Street', '555-123-4567'),
 ('Premium Motors', '78 Oak Avenue', '555-987-6543'),
